@@ -1,0 +1,14 @@
+feature,importance
+Total Rain,0.55481064
+Barometric Pressure,0.10827851
+Wind Speed,0.08950079
+Humidity,0.07403481
+Solar Radiation,0.05976794
+Wind Direction,0.0463897
+Battery Life,0.04315319
+Heading,0.024064468
+Interval Rain,0.0
+Rain Intensity,0.0
+Maximum Wind Speed,0.0
+Precipitation Type_none,0.0
+Precipitation Type_solid,0.0

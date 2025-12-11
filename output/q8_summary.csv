@@ -1,0 +1,4 @@
+Metric,Linear Regression,Random Forest,XGBoost
+R² Score,0.2616,0.2044,0.2804
+RMSE,8.7769,9.1108,8.6647
+MAE,6.9694,7.3242,7.3

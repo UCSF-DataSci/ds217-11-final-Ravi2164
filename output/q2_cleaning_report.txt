@@ -1,0 +1,130 @@
+Data Cleaning Report: 
+
+Rows before cleaning: 196369rows
+
+1-Missing Data:
+                      Missing Count      Missing %
+Wet Bulb Temperature          75975      38.69
+Rain Intensity                75975      38.69
+Total Rain                    75975      38.69
+Heading                       75975      38.69
+Precipitation Type            75975      38.69
+
+Missing Data Handling:
+-Wet Bulb Temperature: 75975 missing vales(38.69%)
+Method: Dropped 
+
+-Rain Intensity: 75975 missing vales(38.69%)
+Method: Dropped
+
+-Total Rain: 75975 missing vales(38.69%)
+Method: Dropped
+
+-Heading: 75975 missing vales(38.69%)
+Method: Dropped
+
+-Precipitation Type: 75975 missing vales(38.69%)
+Method: Dropped
+
+Why? 38.67% of the missing data were dropped because I was not able to apply KNN-Imputation. My cell kept crashing.The missing data were
+correlated across variables, suggesting a MNAR mechanism.Since applying simple imputation to these values could introduce
+bias into the analysis, I chose to drop the missing observations. 
+
+- Barometric Pressure: 146 missing values (0.07%)
+  Method: Median (appropriate for skwed data)
+  Result: All missing values filled
+
+  - Air Temperature: 75 missing values (0.04%)
+  Method: Forward-fill (time series appropriate)
+  Result: All missing values filled
+  
+#2-Outlier Handling:
+#-Capped:
+-Interval Rain: Detected 9,384 outliers (7.79% ) using IQR method (3×IQR)
+ Method: Capped at bounds [Q1 - 3×IQR, Q3 + 3×IQR]
+ Bounds:0.00 to 0.00 mm !!
+ Result:9,384 values capped
+
+ -Barometric Pressure: Detected 59 outliers (0.05%)using IQR method (3×IQR)
+  Method: Capped at bounds [Q1 - 3×IQR, Q3 + 3×IQR]
+  Bounds: [965.40 to 1024.20  pascal]
+  Result:  59 values capped
+ 
+- Wind Speed: Detected 406 outliers (0.34%) using IQR method (3×IQR)
+  Method: Capped at bounds [Q1 - 3×IQR, Q3 + 3×IQR]
+  Bounds: [ -5.60 to 10.50  m/s]
+  Result: 406 values capped
+
+  -Rain Intensity: Detected 4,243 outliers (3.52%) using IQR method (3×IQR)
+  Method: Capped at bounds [Q1 - 3×IQR, Q3 + 3×IQR]
+  Bounds: [ 0.00 to 0.00 mm/h] !!
+  Result: 4,243 values capped
+
+ - Total Rain: Detected 2,702 outliers (2.24%) using IQR method (3×IQR)
+  Method: Capped at bounds [Q1 - 3×IQR, Q3 + 3×IQR]
+  Bounds: [ -534.70 to 751.90 mm]
+  Result: 2,702  values capped
+
+  -Heading: Detected 27,175 outliers (22.57%) using IQR method (3×IQR)
+  Method: Capped at bounds [Q1 - 3×IQR, Q3 + 3×IQR]
+  Bounds: [ 329.00 to 378.00 degrees] 
+  Result:27,175 values capped
+
+
+ -Maximum Wind Speed: Detected 251 outliers (0.21%) using IQR method (3×IQR)
+  Method: Capped at bounds [Q1 - 3×IQR, Q3 + 3×IQR]
+  Bounds: [  -8.30 to 16.90  m/s per 2 min] 
+  Result:251 values capped
+
+ - Solar Radiation: Detected 6,486 outliers (5.39%) using IQR method (3×IQR)
+  Method: Capped at bounds [Q1 - 3×IQR, Q3 + 3×IQR]
+  Bounds: [ -515.00 to 689.00  W/m2n]
+  Result: 2,702  values capped
+
+#3- Replaced placeholders
+Maximum Wind Speed: Detected 5 placeholder (999.9) 
+  Method: replaced with nan and then imputed with forward-fill (time series appropriate)
+  Result: 5 values ffill
+
+Solar Radiation: Detected placeholder (-10000)
+  Method: replaced with nan and then imputed with forward-fill (time series appropriate)
+  Result: values ffill
+
+#4-Hanling Neative Values:
+Solar Radiation: Detected 13425 vaues (11.5 %) 
+  Method: replaced with nan and then imputed with forward-fill (time series appropriate)
+  Result:13425 values imputated
+
+#5- Data types validated and converted
+
+Precipitation Type: Converted to categorical 
+Measurement Timestamp: Converted to datetime64[ns]
+
+Duplicates Removed: 0
+
+Rows after cleaning: 120394(61.33% of the data retained)
+
+
+
+
+Rows before cleaning: 195,672
+
+Air Temperature: 75 missing values → forward-filled/median-imputed → 0 missing
+
+Wet Bulb Temperature: 75,626 missing values → forward-filled/median-imputed → 0 missing
+
+Rain Intensity: 75,626 missing values → forward-filled/median-imputed → 0 missing
+
+Total Rain: 75,626 missing values → forward-filled/median-imputed → 0 missing
+
+Precipitation Type: 75,626 missing values → forward-filled/median-imputed → 0 missing
+
+Barometric Pressure: 146 missing values → forward-filled/median-imputed → 0 missing
+
+Heading: 75,626 missing values → forward-filled/median-imputed → 0 missing
+
+Wind Speed: Capped 2,574 outliers (IQR method, bounds: [-3.50, 8.40])
+
+Outliers handled: 2,574 values capped
+
+Duplicates removed: 0

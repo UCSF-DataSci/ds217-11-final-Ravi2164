@@ -1,0 +1,16 @@
+Key Findings Summary:
+
+A- MODEL PERFORMANCE:
+- Best performing model: XGBoost (R² =0.2804)
+- All models show poor performance (condiering a reasonable performance as R² > 0.7 for tree-based models)
+- Ramndom Forest achieves lowest RMSE::  7.32 
+
+B- FEATURE IMPORTANCE:
+- Most important feature: Total Rain (importance: 5.5%)
+- Top 3 features account for ~7%  of total importance
+- Temporal features (hour, month) are highly important
+
+D-DATA QUALITY:
+- Dataset cleaned: 120394 -> 120394 rows 
+- Missing values handled via forward-fill and median imputation
+- Outliers capped using IQR method

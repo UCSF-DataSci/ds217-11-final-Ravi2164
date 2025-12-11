@@ -1,0 +1,11 @@
+voltage_perminute
+dry_index
+humidity_rolling_24h_centered
+humidity_rolling_7d_centered
+humidity_expanding_mean
+solar_radiation_rolling_7d_centered
+solar_radiation_expanding_mean
+total_rain_rolling_7d_centered
+total_rain_expanding_mean
+wind_speed_rolling_7d_centered
+wind_speed_expanding_mean

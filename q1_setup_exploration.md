@@ -145,6 +145,20 @@ Wind Speed,6.78,4.56,0.1,25.3,0
 - **Visualization choices:** What types of plots best show your data? See Lecture 11 Notebook 1 for examples.
 - **Data quality assessment:** What issues do you see? Missing data patterns? Outliers? Inconsistent formats? Document these for Q2.
 
+The most informative data are the timetrend plot, as the data are collected as time-series. There is a pattern where the highest temperature start to rase each month starting January to August and start to fall starting September. This pattern is repetitive each year. However,tempretures remained relatively higher during 2020-2022. The lowest temperature were recorded during 2019 and 2022,which are compareable with the recodings during 2025-2026(upcoming)
+
+#histograms are helpful to quickly obtain information: 
+temperture shows shifted data ( left shifted); similarly the humidity data are left shiften. On contrary Wind Speed data are right shifted. 
+data quality: there are susbtational missing data as follows:
+
+Missing Count  Missing %
+Wet Bulb Temperature          75975      38.69
+Rain Intensity                75975      38.69
+Total Rain                    75975      38.69
+Heading                       75975      38.69
+Precipitation Type            75975      38.69
+
+
 ---
 
 ## Checkpoint

@@ -1,5 +1,5 @@
 MODEL PERFORMANCE METRICS
-==================================================
+=========================
 
 LINEAR REGRESSION:
   Train R²: 1.0000

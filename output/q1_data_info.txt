@@ -1,0 +1,42 @@
+### Chicago Beach Weather Sensor Data Information:
+Loaded CSV file with 196369rowsDataset shape: (196369, 18)
+First few rows of the dataset:
+                  Station Name   Measurement Timestamp  Air Temperature  Wet Bulb Temperature  Humidity  Rain Intensity  Interval Rain  Total Rain  Precipitation Type  Wind Direction  Wind Speed  Maximum Wind Speed  Barometric Pressure  Solar Radiation  Heading  Battery Life Measurement Timestamp Label                        Measurement ID
+0  63rd Street Weather Station  09/27/2018 10:00:00 AM            16.40                  12.2        61             0.0            0.0       260.3                 0.0             231         2.5                 4.7                996.3              484    356.0          11.9         09/27/2018 10:00 AM  63rdStreetWeatherStation201809271000
+1  63rd Street Weather Station  09/27/2018 11:00:00 AM            17.10                  11.5        51             0.0            0.0       260.3                 0.0             244         3.6                 5.7                995.4              468    356.0          11.9         09/27/2018 11:00 AM  63rdStreetWeatherStation201809271100
+2  63rd Street Weather Station  09/27/2018 01:00:00 PM            18.20                  12.4        51             0.0            0.0       260.3                 0.0             248         3.1                 5.3                994.8              377    355.0          11.9          09/27/2018 1:00 PM  63rdStreetWeatherStation201809271300
+3       Foster Weather Station  09/27/2018 01:00:00 PM            17.89                   NaN        39             NaN            0.0         NaN                 NaN             249         1.4                 2.3                993.6                0      NaN          15.1          09/27/2018 1:00 PM      FosterWeatherStation201809271300
+4  63rd Street Weather Station  09/27/2018 03:00:00 PM            19.50                  13.0        47             0.0            0.0       260.3                 0.0             249         3.1                 5.7                992.9              461    355.0          11.9          09/27/2018 3:00 PM  63rdStreetWeatherStation201809271500
+Column names in the dataset:
+['Station Name', 'Measurement Timestamp', 'Air Temperature', 'Wet Bulb Temperature', 'Humidity', 'Rain Intensity', 'Interval Rain', 'Total Rain', 'Precipitation Type', 'Wind Direction', 'Wind Speed', 'Maximum Wind Speed', 'Barometric Pressure', 'Solar Radiation', 'Heading', 'Battery Life', 'Measurement Timestamp Label', 'Measurement ID']Datatypes of each column:Station Name                    object
+Measurement Timestamp           object
+Air Temperature                float64
+Wet Bulb Temperature           float64
+Humidity                         int64
+Rain Intensity                 float64
+Interval Rain                  float64
+Total Rain                     float64
+Precipitation Type             float64
+Wind Direction                   int64
+Wind Speed                     float64
+Maximum Wind Speed             float64
+Barometric Pressure            float64
+Solar Radiation                  int64
+Heading                        float64
+Battery Life                   float64
+Measurement Timestamp Label     object
+Measurement ID                  object
+dtype: object
+Date Range:
+Start: 01/01/2016 01:00:00 AM:
+End: 12/31/2024 12:00:00 PM:
+Date range in the dataset:From 01/01/2016 01:00:00 AM to 12/31/2024 12:00:00 PM
+Missing Values:
+                      Missing Count  Missing %
+Wet Bulb Temperature          75975      38.69
+Rain Intensity                75975      38.69
+Total Rain                    75975      38.69
+Heading                       75975      38.69
+Precipitation Type            75975      38.69
+Barometric Pressure             146       0.07
+Air Temperature                  75       0.04

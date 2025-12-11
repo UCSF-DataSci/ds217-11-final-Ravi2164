@@ -1,0 +1,25 @@
+Key Patterns Identified:
+Air Temperature  showed seasonal Patterns:
+-The highest temeperature were deteceted from June to September 
+-The lower temperature were recorded during the winter months (December to Febraury)
+-Monthly air temperature ranged: - 5 to 23 grade celcius 
+
+Daily patterns:
+Temperature showed cyclic patterns, diurnal during 24h : rising during the day and falling during the night 
+Peak air temperatures were recorded 2-4pm(14-16)
+Minimum temperatures were recorded during night : 4-6 am 
+
+Correlations: 
+-Wind Speed vs Maximum Wind Speed: 0.923(strong positive correlation, as expected)
+-Wet Bulb Temperature vs Air Temperature : 0.981(strong positive correlation )
+-Wet Bulb Temperature vs Total Rain: 0.461 (moderate positive correlation)
+-Total Rain vs Air Temperature: 0.437(moderate positive correlation)
+
+7-Day moving averages trends: 
+Show that across the years Air temperature does not show many oscilations rather constant with sudle changes 
+Solar radiation depicted a peak before and during 2016(may be an artefact) ; relatively small oscilations across the years 
+with an improvement tendency during 2025-2026
+Rain: shown cyclic patterns during 1 year period( need further exploration), with increased levels during the first months of the year, followed by lower levels(probably during summer months)
+However,this pattern start to become irregular 2021-2023. Moreover, after 2023, the weekly total rainfall shows decline, suggesting a trend toward 
+drier conditions. 
+
