@@ -1,6 +1,5 @@
 ### Chicago Beach Weather Sensor Data Information:
-Loaded CSV file with 196369rowsDataset shape: (196369, 18)
-First few rows of the dataset:
+Loaded CSV file with 196369rowsDataset shape: (196369, 18)First few rows of the dataset:
                   Station Name   Measurement Timestamp  Air Temperature  Wet Bulb Temperature  Humidity  Rain Intensity  Interval Rain  Total Rain  Precipitation Type  Wind Direction  Wind Speed  Maximum Wind Speed  Barometric Pressure  Solar Radiation  Heading  Battery Life Measurement Timestamp Label                        Measurement ID
 0  63rd Street Weather Station  09/27/2018 10:00:00 AM            16.40                  12.2        61             0.0            0.0       260.3                 0.0             231         2.5                 4.7                996.3              484    356.0          11.9         09/27/2018 10:00 AM  63rdStreetWeatherStation201809271000
 1  63rd Street Weather Station  09/27/2018 11:00:00 AM            17.10                  11.5        51             0.0            0.0       260.3                 0.0             244         3.6                 5.7                995.4              468    356.0          11.9         09/27/2018 11:00 AM  63rdStreetWeatherStation201809271100
